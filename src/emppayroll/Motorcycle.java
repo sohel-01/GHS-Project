@@ -1,14 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package emppayroll;
 
-/**
- *
- * @author Dhillon Huni
- */
-public class Motorcycle {
-    
+    public class Motorcycle extends Vehicle implements Iprintable {
+	
+	private String color;
+	private String typeOfTransmission;
+	
+	
+	
+	public String getColor() { 
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getTypeOfTransmission() {
+		return typeOfTransmission;
+	}
+	public void setTypeOfTransmission(String typeOfTransmission) {
+		this.typeOfTransmission = typeOfTransmission;
+	}
+	@Override
+	public void printMyData() {
+		System.out.println(this.color + "  " + this.typeOfTransmission);
+		
+	}
+	
+	
 }
