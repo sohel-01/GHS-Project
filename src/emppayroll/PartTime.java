@@ -1,14 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package emppayroll;
 
-/**
- *
- * @author macstudent
- */
-public class PartTime {
+
     
+public abstract class PartTime extends Employee implements IPrintable {
+	
+	private double rate;
+	private int hoursWorked;
+	
+	PartTime p;
+	
+	public double getRate() {
+		return rate;
+	}
+	public void setRate(double rate) {
+		this.rate = rate;
+	}
+	public int getHoursWorked() {
+		return hoursWorked;
+	}
+	public void setHoursWorked(int hoursWorked) {
+		this.hoursWorked = hoursWorked;
+	}
+	
+	public void settype()
+	{
+		
+	}
+	
+
+}
+
 }
