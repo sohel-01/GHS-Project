@@ -1,6 +1,6 @@
 package emppayroll;
 
-public class Vehicle {
+public abstract class Vehicle {
   
         private String maker;
 	private String regPlate;

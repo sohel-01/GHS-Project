@@ -1,7 +1,7 @@
 
 package emppayroll;
 
-    public class Motorcycle extends Vehicle implements Iprintable {
+    public class Motorcycle extends Vehicle implements IPrintable {
 	
 	private String color;
 	private String typeOfTransmission;
