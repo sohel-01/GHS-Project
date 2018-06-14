@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package emppayroll;
+package EmpPayroll;
 
-/**
- *
- * @author macstudent
- */
-public class Intern {
-    
+public class Intern extends Employee implements IPrintable {
+	
+	private String schoolName;
+	
+	public String getSchoolName() {
+		return schoolName;
+	}
+
+	public void setSchoolName(String schoolName) {
+		this.schoolName = schoolName;
+	}
+
+	@Override
+	public void printMyData() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Name : " + this.getName()+"\nYear of Birth :" + this.calcBrithYear() + "\nEmployee ha no Vehicle\nEmployee is Intern\n\tSchool :"
+		+this.schoolName+"\n\tEarnings :"+this.getEarnings());
+		
+	}
+	
+	
 }
