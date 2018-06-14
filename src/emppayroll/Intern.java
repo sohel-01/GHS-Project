@@ -1,4 +1,4 @@
-package EmpPayroll;
+package com.EmpPayroll.domain;
 
 public class Intern extends Employee implements IPrintable {
 	
