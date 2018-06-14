@@ -1,4 +1,4 @@
-package com.EmpPayroll.domain;
+package EmpPayroll;
 
 public class FullTime extends Employee implements IPrintable {
 
