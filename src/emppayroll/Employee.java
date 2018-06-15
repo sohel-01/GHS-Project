@@ -10,9 +10,8 @@ public abstract class Employee implements IPrintable{
 	private int age;
 	private double earnings;
 	private Vehicle vehicle;
-        
-        
-    public String getName() {
+    
+         public String getName() {
         return name;
     }
 
