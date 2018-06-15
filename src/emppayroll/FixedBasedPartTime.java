@@ -25,16 +25,10 @@ public class FixedBasedPartTime extends PartTime implements IPrintable{
 	
 	@Override
 	public void printMyData() {
-		System.out.println("Name : "+this.getName()
-                        +"Age" +this.getAge()
-                        +"\nYear of Birth : "+this.calcBrithYear()
-                        +"\nEmployee has a MotorCycle\n\tMaker : "+getVehicle().getMaker()
-                        +"\n\tLicense Plate : "+getVehicle().getRegPlate()
-                        +"\n\tType of Transmission : "+getVehicle().getTypeOfTransmission()
-                        +"\n\tColour : "+getVehicle().getColor()
-	+"\nEmployee is PartTime / Fixed Amt\n\t Rate : "+this.getRate()
-                        +"\n\tHours Worked : "+this.getHoursWorked()
-	+"\n\tFixed Amount : "+this.fixedAmount
-     +"\n\tEarnings : "+this.calcEarnings()+"("+FixedBasedPartTime.ear+" + "+this.fixedAmount+")");
+        System.out.println("Name : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()
+        +"\nEmployee has a MotorCycle\n\tMaker : "+getVehicle().getMaker()+"\n\tLicense Plate : "+getVehicle().getRegPlate()
+        +"\n\tType of Transmission : "+getVehicle().getTypeOfTransmission()+"\n\tColour : "+getVehicle().getColor()
+	+"\nEmployee is PartTime / Fixed Amt\n\t Rate : "+this.getRate()+"\n\tHours Worked : "+this.getHoursWorked()
+	+"\n\tFixed Amount : "+this.fixedAmount+"\n\tEarnings : "+this.calcEarnings()+"("+FixedBasedPartTime.ear+" + "+this.fixedAmount+")");
 	}
 }
