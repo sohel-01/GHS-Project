@@ -1,8 +1,9 @@
 
 package emppayroll;
-
-
-    
+/**
+ *
+ * @author gagan
+ */
 public abstract class PartTime extends Employee implements IPrintable {
 	
 	private double rate;
@@ -23,12 +24,8 @@ public abstract class PartTime extends Employee implements IPrintable {
 		this.hoursWorked = hoursWorked;
 	}
 	
-	public void settype()
-	{
-		
-	}
-	
 
 }
+
 
 }

@@ -1,15 +1,15 @@
 
 package emppayroll;
 
-
+/**
+ *
+ * @author sohel
+ */
 public class Car extends Vehicle implements IPrintable {
 	
 	private String typeOfTransmission;
 	private String color;
-	
-	
-	
-	public String getTypeOfTransmission() {
+        public String getTypeOfTransmission() {
 		return typeOfTransmission;
 	}
 	public void setTypeOfTransmission(String typeOfTransmission) {
@@ -24,9 +24,5 @@ public class Car extends Vehicle implements IPrintable {
 	@Override
 	public void printMyData() {
 		
-		System.out.println(this.color + "\n" + this.typeOfTransmission);
 	}
-	
-	
-
 }
