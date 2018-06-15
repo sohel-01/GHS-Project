@@ -9,8 +9,6 @@ public abstract class PartTime extends Employee implements IPrintable {
 	private double rate;
 	private int hoursWorked;
 	
-	PartTime p;
-	
 	public double getRate() {
 		return rate;
 	}
@@ -24,8 +22,5 @@ public abstract class PartTime extends Employee implements IPrintable {
 		this.hoursWorked = hoursWorked;
 	}
 	
-
 }
 
-
-}

@@ -1,12 +1,8 @@
-package EmpPayroll;
+package emppayroll;
 
 
 public class FullTime extends Employee implements IPrintable {
-    
-    
-
-	
-    
+  
 	private double salary;
 	private double bonus;
 	

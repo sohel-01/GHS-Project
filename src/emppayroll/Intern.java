@@ -1,4 +1,4 @@
-package EmpPayroll;
+package emppayroll;
 
 public class Intern extends Employee implements IPrintable {
 	
@@ -14,12 +14,13 @@ public class Intern extends Employee implements IPrintable {
 
 	@Override
 	public void printMyData() {
-		// TODO Auto-generated method stub
-		
-		System.out.println("Name : " + this.getName()+"\nYear of Birth :" + this.calcBrithYear() + "\nEmployee ha no Vehicle\nEmployee is Intern\n\tSchool :"
+		System.out.println("Name : " + this.getName()+"\nYear of Birth :" + this.calcBrithYear() + "\nEmployee has no Vehicle\nEmployee is Intern\n\tSchool :"
 		+this.schoolName+"\n\tEarnings :"+this.getEarnings());
-		
+        }
+         public void printIntern2(){
+             System.out.println("Name : " + this.getName()+"\nYear of Birth :" +this.calcBrithYear() + "\nEmployee has Car \n\tMaker : "+getVehicle().getMaker()
+                     +"\n\tLicense Plate : "+getVehicle().getRegPlate()+"\n\tType of Transmission : "+getVehicle().getTypeOfTransmission()+"\n\tColor : "+getVehicle().getColor()+"\nEmployee is Intern\n\tSchool :"
+		+this.schoolName+"\n\tEarnings :"+this.getEarnings());
+         }
 	}
 	
-	
-}
