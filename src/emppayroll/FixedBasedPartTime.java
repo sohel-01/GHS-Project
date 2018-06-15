@@ -1,30 +1,40 @@
 package emppayroll;
 
-
+/**
+ *
+ * @author gagan
+ */
 public class FixedBasedPartTime extends PartTime implements IPrintable{
 	
 	private double fixedAmount;
+	static double ear;
 	
 	public double calcEarnings() {
-		
-		double ear = super.getRate() * super.getHoursWorked();
-		double com = ear*(fixedAmount/100);
+		ear = this.getRate()*this.getHoursWorked();
+		double com =fixedAmount;
 		return ear+com;
 	}
-
-	
 
 	public void setFixedAmount(double fixedAmount) {
 		this.fixedAmount = fixedAmount;
 	}
-
-
-
-	@Override
-	public void printMyData() {
 	
-		
+	public double getFixedAmount() {
+		return fixedAmount;
 	}
 	
-	
+	@Override
+	public void printMyData() {
+		System.out.println("Name : "+this.getName()
+                        +"Age" +this.getAge()
+                        +"\nYear of Birth : "+this.calcBrithYear()
+                        +"\nEmployee has a MotorCycle\n\tMaker : "+getVehicle().getMaker()
+                        +"\n\tLicense Plate : "+getVehicle().getRegPlate()
+                        +"\n\tType of Transmission : "+getVehicle().getTypeOfTransmission()
+                        +"\n\tColour : "+getVehicle().getColor()
+	+"\nEmployee is PartTime / Fixed Amt\n\t Rate : "+this.getRate()
+                        +"\n\tHours Worked : "+this.getHoursWorked()
+	+"\n\tFixed Amount : "+this.fixedAmount
+     +"\n\tEarnings : "+this.calcEarnings()+"("+FixedBasedPartTime.ear+" + "+this.fixedAmount+")");
+	}
 }
